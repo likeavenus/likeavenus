@@ -5,14 +5,18 @@
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat-light;
-  src: url(../fonts/Montserrat-Light.ttf) format('truetype');
+  font-family: Montserrat-Reg;
+  src: url(../fonts/Montserrat-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 h2 {
-  font-family: Montserrat-light;
+  font-family: Montserrat-Medium;
   font-weight: bold;
+}
+p {
+  font-family: Montserrat-Reg;
+  font-size: 2vh;
 }
 body {
   font-family: Montserrat-Medium;
