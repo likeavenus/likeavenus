@@ -4,9 +4,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Montserrat-light;
+  src: url(../fonts/Montserrat-Light.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h2 {
+  font-family: Montserrat-light;
+  font-weight: bold;
+}
 body {
   font-family: Montserrat-Medium;
   font-weight: normal;
+}
+header {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 .header__box {
   display: -webkit-flex;
@@ -14,5 +29,95 @@ body {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.header__contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  background-color: #FDF5E6;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+}
+.header__contacts:hover {
+  background-color: #FFE4E1;
+}
+.header__box > div {
+  margin: 30px;
+}
+.header__link-vk {
+  color: #4682B4;
+  font-weight: bold;
+}
+.header__link-vk:active {
+  color: #FF1493;
+}
+.header__contacts > a {
+  margin: 10px;
+}
+/*icons*/
+.icon {
+  background: url(../img/sprites/css_sprites.png) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.whatsap {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -62px;
+}
+.telegramm {
+  width: 32px;
+  height: 32px;
+  background-position: -62px -10px;
+}
+.vk {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -10px;
+}
+/*header end*/
+
+main {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+}
+.promo {
+}
+.promo__box {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+.promo__avatar {
+  background: url(../img/avatar.jpg) no-repeat 40% 30%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #778899;
+}
+.promo__title {
+  font-weight: bold;
+  font-size: 44px;
+}
+.promo__short-bio {
+  font-weight: normal;
 }
