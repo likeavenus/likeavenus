@@ -56,7 +56,7 @@ header {
   border-radius: 4px;
   transition: background-color .2s ease;
 }
-@media (max-width: 850px) {
+@media (max-width: 1250px) {
   .header__contacts {
     display: none;
   }
@@ -240,6 +240,6 @@ use {
 }
 .contact-with-me {
   text-align: center;
+  margin-top: 35px;
   border-top: 1px solid #B0C4DE
-
 }
