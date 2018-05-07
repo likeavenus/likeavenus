@@ -55,6 +55,11 @@ header {
   border-radius: 4px;
   transition: background-color .2s ease;
 }
+@media (max-width: 420px) {
+  .header__contacts {
+    display: none;
+  }
+}
 .header__contacts:hover {
   background-color: #FFE4E1;
 }
