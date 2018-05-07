@@ -16,10 +16,11 @@ h2 {
 }
 p {
   font-family: Montserrat-Reg;
-  font-size: 2vh;
+  font-size: 20px;
+  font-weight: normal;
 }
 body {
-  font-family: Montserrat-Medium;
+  font-family: Montserrat-Medium, Helvetica, Arial;
   font-weight: normal;
 }
 header {
@@ -55,7 +56,7 @@ header {
   border-radius: 4px;
   transition: background-color .2s ease;
 }
-@media (max-width: 420px) {
+@media (max-width: 800px) {
   .header__contacts {
     display: none;
   }
@@ -130,3 +131,73 @@ main {
 .promo__short-bio {
   font-weight: normal;
 }
+/*animation*/
+
+#btn--yp {
+  box-sizing: content-box;
+  position: fixed;
+  z-index: 9;
+  bottom: 1rem;
+  right: 1rem;
+  border: solid 1rem transparent;
+  width: 4.625rem;
+  height: 3.25rem;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/icon-yp.svg) 50%/cover content-box;
+  text-indent: 200vw;
+  text-shadow: none;
+  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
+  transition: .5s;
+  white-space: nowrap;
+}
+#btn--yp:before {
+  box-sizing: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin: 1rem -.5rem;
+  padding: .5rem;
+  width: 100%;
+  border-radius: 5px;
+  background: #e8e0e0;
+  color: #000;
+  font: 1rem/1.25rem trebuchet ms, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0vw;
+  white-space: normal;
+  animation: float 1s ease-in-out infinite alternate;
+  content: attr(data-txt);
+}
+#btn--yp:hover, #btn--yp:focus {
+  outline: none;
+  filter: grayscale(0) drop-shadow(0 0 1px crimson);
+}
+
+@keyframes float {
+  to {
+    transform: translateY(0.75rem);
+  }
+}
+
+svg {
+  max-width: 25em;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px #000;
+  background: #111;
+  fill: none;
+  stroke: #222;
+  stroke-linecap: round;
+  stroke-width: 8%;
+}
+
+use {
+  stroke: #fff;
+  animation: a 2s linear infinite;
+}
+
+@keyframes a {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+/* end*/
