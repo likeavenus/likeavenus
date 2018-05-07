@@ -19,6 +19,7 @@ p,ul {
   font-size: 20px;
   font-weight: normal;
 }
+
 body {
   font-family: Montserrat-Medium, Helvetica, Arial;
   font-weight: normal;
@@ -251,6 +252,11 @@ use {
   text-align: center;
   margin-top: 35px;
   border-top: 1px solid #B0C4DE
+}
+@media (max-width: 500px) {
+  .contacts__item {
+    font-size: 22px;
+  }
 }
 .is-power {
 
