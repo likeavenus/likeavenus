@@ -65,7 +65,7 @@ header {
   background-color: #FFE4E1;
 }
 .header__box > div {
-  margin: 30px;
+  margin: 30px 100px 0 0;
 }
 .header__link-vk {
   color: #4682B4;
