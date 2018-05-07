@@ -14,7 +14,7 @@ h2 {
   font-family: Montserrat-Medium;
   font-weight: bold;
 }
-p {
+p,ul {
   font-family: Montserrat-Reg;
   font-size: 20px;
   font-weight: normal;
@@ -135,6 +135,15 @@ main {
 .promo__short-bio {
   font-weight: normal;
 }
+.promo__list-item {
+  margin: 10px;
+}
+.promo__list-link {
+  transition: color .1s ease-in;
+}
+.promo__list-link:hover {
+  color: #8A2BE2;
+}
 /*animation*/
 
 #btn--yp {
@@ -205,9 +214,9 @@ use {
   }
 }
 /* end*/
+
 /*footer*/
 .btm-container {
-/*  max-width: 1000px;*/
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
@@ -242,4 +251,7 @@ use {
   text-align: center;
   margin-top: 35px;
   border-top: 1px solid #B0C4DE
+}
+.is-power {
+
 }
