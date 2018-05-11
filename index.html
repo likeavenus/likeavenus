@@ -6,6 +6,7 @@
   <title>likeavenus</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fm.revealator.jquery.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="likeavenus разработка сайтов">
@@ -41,6 +42,7 @@
 <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+  <div class="parallax" data-parallax="scroll" data-image-src="img/parallax.png"></div>
   <header class="header">
     <div class="header__box">
       <div class="header__link">
@@ -55,16 +57,16 @@
     </div>
   </header>
   <main class="main">
-    <section class="promo">
+    <section class="promo revealator-slideleft revealator-delay2">
       <div class="promo__box">
         <div class="promo__avatar"></div>
         <h1 class="promo__title">Рафаэль Гулиев</h1>
       </div>
       <h2 class="promo__short-bio">Junior frontend разработчик / HTML-верстальщик</h2>
-      <h2 class="promo__short-bio">Разрабатываю сайты. Надёжно.</h2>
+      <h2 class="promo__short-bio">Разрабатываю сайты.</h2>
     </section>
     <section class="container">
-      <div class="container__info">
+      <div class="container__info  revealator-slideleft revealator-delay5">
         <p class="container__text">
           Верстаю адаптивно, семантично, кроссбраузерно. Знаю HTML5, CSS3, Jquery, JavaScript(junior), Bootstrap, а так же Adobe Photoshop на уровне нарезки макетов.
         </p>
@@ -135,5 +137,6 @@
   </footer>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/fm.revealator.jquery.js"></script>
 </body>
 </html>
