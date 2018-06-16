@@ -17,7 +17,7 @@ h2 {
 }
 p,ul {
   font-family: Montserrat-Reg;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -63,15 +63,35 @@ header {
     display: none;
   }
 }
+.header__contacts a {
+  padding: 5px 0;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.header__contacts a:hover {
+  background:  #FAF0E6;
+  border-radius: 10px;
+}
+.header__contacts a:active {
+  color: #000;
+}
 .header__contacts:hover {
   background-color: #FFE4E1;
 }
 .header__box > div {
   margin: 30px 100px 0 0;
 }
-.header__link-vk {
-  color: #4682B4;
-  font-weight: bold;
+
+.contacts a {
+  -webkit-transition: color .1s ease-in-out;
+  -o-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
+}
+.contacts a:hover {
+  color: red;
 }
 .header__link-vk:active {
   color: #FF1493;
@@ -106,7 +126,7 @@ header {
 main {
   max-width: 860px;
   width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -115,7 +135,8 @@ main {
   box-shadow: 0 0 20px rgba(0,0,0,.1);;
 }
 
-.promo {
+.container {
+  padding-bottom: 25px;
 }
 .promo__box {
   display: -webkit-flex;
@@ -147,6 +168,7 @@ main {
 .promo__short-bio {
   font-weight: normal;
 }
+
 .promo__list-item {
   margin: 10px;
 }
@@ -272,7 +294,7 @@ use {
 }
 .contact-with-me {
   text-align: center;
-  margin-top: 35px;
+  padding-top: 35px;
   border-top: 1px solid #B0C4DE
 }
 @media (max-width: 500px) {
