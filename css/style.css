@@ -257,11 +257,15 @@ use {
 /* end*/
 
 /*footer*/
+footer {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+}
 .btm-container {
   width: 100%;
   margin-top: 20px;
   padding: 30px 0 100px 0;
-
 }
 .contacts {
   display: -webkit-flex;
@@ -274,7 +278,7 @@ use {
   -ms-flex-direction: row-reverse;
   -o-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
   -ms-align-items: center;
   align-items: center;
 }
