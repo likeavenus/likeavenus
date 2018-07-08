@@ -58,7 +58,7 @@ header {
   border-radius: 4px;
   transition: background-color .2s ease;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1550px) {
   .header__contacts {
     display: none;
   }
