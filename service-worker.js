@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/likeavenus-react/precache-manifest.20b9b6b9d934ef44bfcc0d80230095ac.js"
+  "/likeavenus/precache-manifest.e60695ccb9136700eaaf19aa01c81ca5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/likeavenus-react/index.html", {
+workbox.routing.registerNavigationRoute("/likeavenus/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
