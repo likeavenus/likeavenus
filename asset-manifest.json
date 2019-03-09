@@ -1,17 +1,17 @@
 {
-  "main.css": "/likeavenus/static/css/main.e53a8287.chunk.css",
-  "main.js": "/likeavenus/static/js/main.f0c5e2e9.chunk.js",
-  "main.js.map": "/likeavenus/static/js/main.f0c5e2e9.chunk.js.map",
+  "main.css": "/likeavenus/static/css/main.35ca69dc.chunk.css",
+  "main.js": "/likeavenus/static/js/main.076eaa69.chunk.js",
+  "main.js.map": "/likeavenus/static/js/main.076eaa69.chunk.js.map",
   "runtime~main.js": "/likeavenus/static/js/runtime~main.291fdfb2.js",
   "runtime~main.js.map": "/likeavenus/static/js/runtime~main.291fdfb2.js.map",
-  "static/js/2.ab0c1431.chunk.js": "/likeavenus/static/js/2.ab0c1431.chunk.js",
-  "static/js/2.ab0c1431.chunk.js.map": "/likeavenus/static/js/2.ab0c1431.chunk.js.map",
+  "static/js/2.8014575e.chunk.js": "/likeavenus/static/js/2.8014575e.chunk.js",
+  "static/js/2.8014575e.chunk.js.map": "/likeavenus/static/js/2.8014575e.chunk.js.map",
   "index.html": "/likeavenus/index.html",
-  "precache-manifest.f060192151c61ccc570997b8fa8e7ae8.js": "/likeavenus/precache-manifest.f060192151c61ccc570997b8fa8e7ae8.js",
+  "precache-manifest.b8800967c5e6f106e99ceebb8293a713.js": "/likeavenus/precache-manifest.b8800967c5e6f106e99ceebb8293a713.js",
   "service-worker.js": "/likeavenus/service-worker.js",
-  "static/css/main.e53a8287.chunk.css.map": "/likeavenus/static/css/main.e53a8287.chunk.css.map",
+  "static/css/main.35ca69dc.chunk.css.map": "/likeavenus/static/css/main.35ca69dc.chunk.css.map",
   "static/media/index.css": "/likeavenus/static/media/OpenSans-Regular.ce3b96ab.woff",
   "static/media/avatar.png": "/likeavenus/static/media/avatar.044ebcb6.png",
-  "static/media/Contacts.css": "/likeavenus/static/media/yandex.9d9c0f06.svg",
-  "static/media/App.css": "/likeavenus/static/media/wallpaper.1aedc3c9.jpg"
+  "static/media/App.css": "/likeavenus/static/media/wallpaper.1aedc3c9.jpg",
+  "static/media/Contacts.css": "/likeavenus/static/media/yandex.9d9c0f06.svg"
 }
