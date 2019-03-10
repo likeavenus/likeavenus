@@ -1,0 +1,105 @@
+.Contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.Contacts_title {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .Contacts_title {
+        font-size: 23px;
+    }
+}
+
+.Contacts_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .Contacts_list {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Contacts_list {
+        flex-direction: row;
+    }
+}
+
+.Contacts_item {
+    list-style: none;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .Contacts_item {
+        font-size: 23px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Contacts_item {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 15px;
+    }
+}
+
+.Contacts_link {
+    position: relative;
+    color: #8fc6ff;
+    transition: all .25s ease;
+}
+
+.Contacts_link:hover {
+    opacity: .7;
+}
+
+.Contacts_item a {
+    display: inline-block;
+    content: '';
+    width: 32px;
+    height: 32px;
+}
+
+@media (min-width: 768px) {
+    .Contacts_item a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .Contacts_item a {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.Contacts_item:first-child a {
+    background: url("./assets/telega.svg") no-repeat center;
+    background-size: contain;
+}
+
+.Contacts_item:nth-child(2) a {
+    background: url("./assets/whatsup.svg") no-repeat center;
+    background-size: contain;
+}
+
+.Contacts_item:nth-child(3) a {
+    background: url("./assets/phone.svg") no-repeat center;
+    background-size: contain;
+}
+
+.Contacts_item:nth-child(4) a {
+    background: url("./assets/yandex.svg") no-repeat center;
+    background-size: contain;
+}

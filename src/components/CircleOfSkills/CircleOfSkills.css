@@ -1,0 +1,56 @@
+.circle_of_skills {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    z-index: 20;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .circle_of_skills {
+        width: 660px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .circle_of_skills {
+        width: 850px;
+        margin: 0 auto;
+    }
+}
+
+canvas {
+    background: #fff;
+    border-radius: 5px;
+}
+
+#percent {
+    color: #529e01;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-97%, -190%);
+    font-size: 18px;
+}
+
+.doghnuts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.skill_img {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 55px;
+}
+
+.canvas_wrap {
+    display: inline-block;
+    position: relative;
+}
