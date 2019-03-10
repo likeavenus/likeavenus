@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 import './App.css';
 import {Link, Route, Router} from "react-router-dom";
 import Skills from "./components/Skills/Skills";
@@ -59,6 +60,7 @@ class App extends Component {
 
             <Route exact path="/likeavenus" component={Home}/>
             <Route path="/skills" component={Skills}/>
+            <Route path="/about" component={About}/>
           </div>
         </Router>
       </div>
