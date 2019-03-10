@@ -31,9 +31,9 @@ p {
   position: relative;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
   .App {
-    /*height: 100vh;*/
+    height: 100vh;
   }
 }
 
