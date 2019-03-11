@@ -1,13 +1,13 @@
 {
   "main.css": "/likeavenus/static/css/main.6479512d.chunk.css",
-  "main.js": "/likeavenus/static/js/main.eeb84ba2.chunk.js",
-  "main.js.map": "/likeavenus/static/js/main.eeb84ba2.chunk.js.map",
+  "main.js": "/likeavenus/static/js/main.d5ef0a2e.chunk.js",
+  "main.js.map": "/likeavenus/static/js/main.d5ef0a2e.chunk.js.map",
   "runtime~main.js": "/likeavenus/static/js/runtime~main.cda14d88.js",
   "runtime~main.js.map": "/likeavenus/static/js/runtime~main.cda14d88.js.map",
-  "static/js/2.7c63c92c.chunk.js": "/likeavenus/static/js/2.7c63c92c.chunk.js",
-  "static/js/2.7c63c92c.chunk.js.map": "/likeavenus/static/js/2.7c63c92c.chunk.js.map",
+  "static/js/2.0346899c.chunk.js": "/likeavenus/static/js/2.0346899c.chunk.js",
+  "static/js/2.0346899c.chunk.js.map": "/likeavenus/static/js/2.0346899c.chunk.js.map",
   "index.html": "/likeavenus/index.html",
-  "precache-manifest.84208f9e43515deeb23ea04f0fbb6133.js": "/likeavenus/precache-manifest.84208f9e43515deeb23ea04f0fbb6133.js",
+  "precache-manifest.4274b52e1019fd31aa64eea05d328f2c.js": "/likeavenus/precache-manifest.4274b52e1019fd31aa64eea05d328f2c.js",
   "service-worker.js": "/likeavenus/service-worker.js",
   "static/css/main.6479512d.chunk.css.map": "/likeavenus/static/css/main.6479512d.chunk.css.map",
   "static/media/index.css": "/likeavenus/static/media/OpenSans-Regular.ce3b96ab.woff",
@@ -16,5 +16,5 @@
   "static/media/css3.svg": "/likeavenus/static/media/css3.0038f72c.svg",
   "static/media/js.svg": "/likeavenus/static/media/js.3f9ca62f.svg",
   "static/media/Contacts.css": "/likeavenus/static/media/yandex.81c8abd3.svg",
-  "static/media/react.svg": "/likeavenus/static/media/react.d38439b1.svg"
+  "static/media/react.svg": "/likeavenus/static/media/react.0fb7d4c7.svg"
 }
