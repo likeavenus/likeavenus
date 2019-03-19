@@ -71,7 +71,8 @@ class CircleOfSkills extends Component {
                 context.beginPath();
                 context.strokeStyle = `hsl(190, 100%, ${circleStyle}%)`;
                 context.lineWidth = "30";
-                context.arc(150, 150, 100, 0, min * coefficient, false);
+                // context.arc(150, 150, 100, 0, min * coefficient, false);
+                context.arc(150, 150, 100, 0, min * coefficient * (1 + Math.pow(1 - min/maxPercent, 2)), false);
                 context.stroke();
                 levelOfKnowledge.innerHTML = `${Math.round(min)} %`;
                 min++;

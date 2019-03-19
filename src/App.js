@@ -18,7 +18,7 @@ class App extends Component {
     };
 
     this.showMenu = this.showMenu.bind(this);
-      }
+  }
 
   showMenu = () => {
     this.setState({
@@ -53,9 +53,9 @@ class App extends Component {
                 <Link onClick={this.showMenu} className="home_link_arrow" to="/about">Обо мне</Link>
               </li>
 
-              <li className="menu_item">
-                <Link onClick={this.showMenu} className="home_link_arrow" to="/contacts">Контакты</Link>
-              </li>
+              {/*<li className="menu_item">*/}
+                {/*<Link onClick={this.showMenu} className="home_link_arrow" to="/contacts">Контакты</Link>*/}
+              {/*</li>*/}
             </ul>
 
             <Route exact path="/likeavenus" component={Home}/>
