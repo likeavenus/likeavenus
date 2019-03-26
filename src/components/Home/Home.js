@@ -63,7 +63,7 @@ class Home extends Component {
                         <span className="span_5">o</span>
                         <span className="span_6">r</span> Frontend разработчик</h2>
                 </div>
-                <div className="about">
+                <div className="home_about">
                     {infoBlocks}
                 </div>
                 <div className="works">
