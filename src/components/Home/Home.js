@@ -1,78 +1,131 @@
 import React, { Component } from 'react';
-import _ from "lodash";
+// import _ from "lodash";
 import './Home.css';
-import avatar from './assets/avatar.png';
-import InfoBlock from "../InfoBlock/InfoBlock";
-import Contacts from "../Contacts/Contacts";
 
 
 class Home extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            information: [
-                {
-                    id: 1,
-                    title: '',
-                    text: ['Профессия изначально должна быть актом любви. И никак не браком по расчету. И пока не поздно, не забывайте о том, что дело всей жизни — это не дело, а жизнь.']
-                },
-                {
-                    id: 2,
-                    title: 'Немного о скилах',
-                    text: ['Верстаю адаптивно, семантично, кроссбраузерно. Знаю HTML5, CSS3, Jquery, JavaScript(junior), Pug, Gulp, а так же Adobe Photoshop и Figma на уровне нарезки макетов.', 'Работаю по методологии БЭМ. Из препроцессоров использую Sass. По возможностям препроцессора использую переменные, вложенность, миксины.', 'Активно изучаю React + Redux', 'Поглядываю на Three.js и Vue ', 'Использую гит']
-                },
-                {
-                    id: 3,
-                    title: 'Где я набираю опыт',
-                    text: [ 'В настоящее время работаю младшим фронтенд разработчиком в агенстве Traffic Isobar Digital Agency.']
-                }
-            ]
-        };
+        this.particles = React.createRef();
+
     }
 
+    createAnimation = () => {
+        const canvas = document.querySelector('#canvas');
+        const ctx = canvas.getContext('2d');
 
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        function randomIntFromRange(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        const colors = [
+            '#00bdff',
+            '#4d39ce',
+            '#088eff',
+            'brown',
+            'orange',
+            'lightgreen'
+        ];
+
+        const mouse = {
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2
+        };
+
+        document.addEventListener('mousemove', event => {
+            mouse.x = event.clientX;
+            mouse.y = event.clientY;
+        });
+
+        document.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        })
+
+        function randomColor(colors) {
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+
+        function Particle(x, y, radius, color) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color;
+            this.radians = Math.random() * Math.PI * 2;;
+            this.velocity = 0.05;
+            this.distanceFromCenter = randomIntFromRange(50, 120);
+
+
+            this.update = () => {
+                const lastPoint = {
+                    x: this.x,
+                    y: this.y
+                }
+                this.radians += this.velocity;
+                this.x = mouse.x + Math.cos(this.radians) * this.distanceFromCenter;
+                this.y = mouse.y + Math.sin(this.radians) * this.distanceFromCenter;
+                this.draw(lastPoint);
+            }
+
+            this.draw = (lastPoint) => {
+                ctx.beginPath();
+                ctx.strokeStyle = this.color;
+                ctx.lineWidth = this.radius;
+                ctx.moveTo(lastPoint.x, lastPoint.y);
+                ctx.lineTo(this.x, this.y);
+                ctx.stroke();
+                ctx.closePath();
+            }
+        }
+
+        let particles;
+
+        const init = () => {
+            particles = [];
+            for (let i = 0; i < 60; i++) {
+                const radius = Math.random() * 2 + 2;
+                particles.push(new Particle(canvas.width / 2, canvas.height / 2, radius, randomColor(colors)));
+            }
+
+            // console.log(particles)
+        }
+
+
+
+        const animate = () => {
+            requestAnimationFrame(animate);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(particle => {
+                particle.update();
+            })
+        };
+
+
+
+        init();
+        animate();
+
+
+
+    };
+
+    componentDidMount() {
+        this.createAnimation();
+    }
 
     render() {
-        let infoBlocks = [];
-        let stateInfo = this.state.information;
-
-        _.each(stateInfo, (item, index) => {
-            infoBlocks.push(
-                <InfoBlock
-                    key={item.id}
-                    title={item.title}
-                    text={item.text}
-                />
-            );
-        });
 
 
         return (
-            <div className="Home">
-                <div className="title_box">
-                    <img src={avatar} alt="avatar"/>
-                    <h1 className="home_title">Рафаэль Гулиев</h1>
-                </div>
-                <div className="info_box">
-                    <h2 className="info_box_title">
-                        <span className="span_1">J</span>
-                        <span className="span_2">u</span>
-                        <span className="span_3">n</span>
-                        <span className="span_4">i</span>
-                        <span className="span_5">o</span>
-                        <span className="span_6">r</span> Frontend разработчик</h2>
-                </div>
-                <div className="home_about">
-                    {infoBlocks}
-                </div>
-                <div className="works">
-                    <h2 className="works_title">Примеры работ</h2>
-                    <a className="works_link" rel="noopener noreferrer" target="_blank" href="https://likeavenus.github.io/Leto/">Пример работы с анимациями</a>
-                    <a className="works_link" rel="noopener noreferrer" target="_blank" href="https://likeavenus.github.io/Building/">Страница строительной фирмы (пример, без адаптивности)</a>
-                    <a className="works_link" rel="noopener noreferrer" target="_blank" href="https://likeavenus.github.io/first-p/">Школа сноуборда и горных лыж</a>
-                </div>
-                <Contacts/>
+            <div className={"Home_animation"}>
+                <div className={'message'}>Эта страница в стадии разработки...</div>
+                <canvas id={"canvas"} ref={this.particles}></canvas>
             </div>
         );
     }
