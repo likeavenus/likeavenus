@@ -64,8 +64,8 @@ class About extends Component {
                 </div>
                 <div className="works">
                     <h2 className="works_title">Примеры работ</h2>
+                    <a className="works_link" rel="noopener noreferrer" target="_blank" href="http://bk.auroraproduction.ru/">Aurora Streaming solutions</a>
                     <a className="works_link" rel="noopener noreferrer" target="_blank" href="https://likeavenus.github.io/Leto/">Пример работы с анимациями</a>
-                    <a className="works_link" rel="noopener noreferrer" target="_blank" href="https://likeavenus.github.io/Building/">Страница строительной фирмы (пример, без адаптивности)</a>
                     <a className="works_link" rel="noopener noreferrer" target="_blank" href="https://likeavenus.github.io/first-p/">Школа сноуборда и горных лыж</a>
                 </div>
                 <Contacts/>
